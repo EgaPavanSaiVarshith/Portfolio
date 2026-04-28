@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Pavan Sai Varshith Ega – Full Stack Web Developer & CS Student. Portfolio showcasing projects, skills, and experience in web development, cloud, and technology." />
+  <meta name="keywords"
+    content="Pavan Sai Varshith Ega, Web Developer, Full Stack, Portfolio, JavaScript, Next.js, FastAPI, Python" />
+  <meta name="author" content="Pavan Sai Varshith Ega" />
+  <title>Pavan Sai Varshith Ega | Full Stack Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== PARTICLE CANVAS ===== -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar" class="glass">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>PSV<span class="logo-bracket">/&gt;</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#github-stats" class="nav-link">GitHub</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge reveal glass">
+        <span class="status-dot"></span> Available for opportunities
+      </div>
+      <h1 class="hero-title reveal">
+        Hi, I'm <span class="gradient-text">Pavan Sai Varshith Ega</span>
+      </h1>
+      <h2 class="hero-subtitle reveal">
+        <span class="typed-wrapper">
+          <span id="typed-text"></span><span class="cursor-blink">|</span>
+        </span>
+      </h2>
+      <p class="hero-tagline reveal">
+        Building scalable web applications and solving real-world problems using modern technologies.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn-primary" id="view-projects-btn">
+          <i class="fas fa-rocket"></i> View Projects
+        </a>
+        <a href="https://github.com/EgaPavanSaiVarshith" target="_blank" rel="noopener noreferrer"
+          class="btn-secondary">
+          <i class="fab fa-github"></i> GitHub Profile
+        </a>
+      </div>
+      <div class="hero-social reveal">
+        <a href="https://github.com/EgaPavanSaiVarshith" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+          class="social-icon glass"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/pavan-sai-varshith/" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn" class="social-icon glass"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/ega.pavansai/" target="_blank" rel="noopener noreferrer"
+          aria-label="Instagram" class="social-icon glass"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:23831a6648@gniindia.org" aria-label="Email" class="social-icon glass"><i
+            class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="hero-card-3d glass-panel" id="hero-card">
+        <div class="code-window">
+          <div class="code-window-bar">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="code-title">developer.js</span>
+          </div>
+          <div class="code-body">
+            <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Pavan Sai Varshith Ega"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"Full Stack Web Developer"</span>,
+  <span class="code-prop">focus</span>: <span class="code-string">"AI & ML"</span>,
+  <span class="code-prop">stack</span>: [
+    <span class="code-string">"JavaScript"</span>,
+    <span class="code-string">"Next.js"</span>,
+    <span class="code-string">"FastAPI"</span>,
+    <span class="code-string">"PostgreSQL"</span>,
+  ],
+  <span class="code-prop">cloud</span>: <span class="code-string">"Microsoft Azure"</span>,
+};</code></pre>
+          </div>
+        </div>
+        <div class="floating-badge badge-1 glass"><i class="fab fa-js-square"></i> JS / TS</div>
+        <div class="floating-badge badge-2 glass"><i class="fab fa-python"></i> Python</div>
+        <div class="floating-badge badge-3 glass"><i class="fas fa-database"></i> DB</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// about_me.md</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap reveal">
+          <div class="about-avatar glass-panel">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="avatar-orbit">
+              <div class="orbit-icon glass" style="--angle:0deg"><i class="fab fa-js"></i></div>
+              <div class="orbit-icon glass" style="--angle:72deg"><i class="fab fa-python"></i></div>
+              <div class="orbit-icon glass" style="--angle:144deg"><i class="fas fa-brain"></i></div>
+              <div class="orbit-icon glass" style="--angle:216deg"><i class="fas fa-database"></i></div>
+              <div class="orbit-icon glass" style="--angle:288deg"><i class="fab fa-react"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <h3>Hello, I'm <span class="gradient-text">Pavan Sai Varshith Ega!</span></h3>
+          <p>
+            I'm a <strong>Computer Science student (AI & ML)</strong> with a deep passion for
+            <strong>Full Stack Web Development</strong>, <strong>Cloud Computing</strong>, and solving
+            real-world problems through technology. I enjoy bridging the gap between innovative AI/ML
+            concepts and robust web applications.
+          </p>
+          <p>
+            My strong interest in full-stack development drives me to build everything from seamless,
+            responsive user interfaces to secure and scalable backend APIs. I'm constantly learning
+            and exploring new frameworks, languages, and architectures.
+          </p>
+          <p>
+            When I'm not studying or coding, you'll find me exploring the latest trends in tech and cloud
+            infrastructure to ensure I'm building modern, future-proof applications.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item glass">
+              <span class="stat-num gradient-text">Full</span>
+              <span class="stat-label">Stack</span>
+            </div>
+            <div class="stat-item glass">
+              <span class="stat-num gradient-text">AI & ML</span>
+              <span class="stat-label">Focus</span>
+            </div>
+            <div class="stat-item glass">
+              <span class="stat-num gradient-text">Cloud</span>
+              <span class="stat-label">Ready</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// skills.config</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <p class="section-desc">Technologies and tools I work with to build scalable applications.</p>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal glass-panel">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap"><i class="fas fa-code"></i></div>
+            <h3>Languages & Web</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <i class="fab fa-js-square" style="color:#f7df1e"></i><span>JavaScript / HTML / CSS</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill neon-bar" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <i class="fab fa-python" style="color:#3776ab"></i><span>Python</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill neon-bar" data-width="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal glass-panel">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap"><i class="fas fa-layer-group"></i></div>
+            <h3>Frameworks & Backend</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <i class="fab fa-react" style="color:#61dafb"></i><span>Next.js</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill neon-bar" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <i class="fas fa-bolt" style="color:#009688"></i><span>FastAPI</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill neon-bar" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info">
+                <i class="fas fa-database" style="color:#336791"></i><span>PostgreSQL</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill neon-bar" data-width="70"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// projects.json</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-desc">Real-world applications I've built to solve practical problems.</p>
+      </div>
+
+      <!-- Project Filters -->
+      <div class="project-filters reveal glass">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="ai">AI / Backend</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT 1: Vasavi Bhavan -->
+        <div class="project-card reveal glass-panel filter-item web">
+          <div class="project-img-wrapper">
+            <div class="project-img-placeholder">
+              <i class="fas fa-building"></i>
+              <span>Vasavi Bhavan UI</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://vasavi-bhavan.vercel.app" target="_blank" rel="noopener noreferrer"
+                class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/EgaPavanSaiVarshith/Vasavi-Bhavan" target="_blank" rel="noopener noreferrer"
+                class="overlay-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <span class="project-badge">Web Development</span>
+            <h3 class="project-title">Vasavi Bhavan Website</h3>
+            <p class="project-desc">
+              A responsive web application designed to showcase hostel/mess services with smooth navigation and clean
+              UI. Focuses on an interactive and seamless user experience.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag glass">HTML</span>
+              <span class="tech-tag glass">CSS</span>
+              <span class="tech-tag glass">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://vasavi-bhavan.vercel.app" target="_blank" rel="noopener noreferrer"
+              class="btn-primary btn-sm">
+              <i class="fas fa-play"></i> Live Demo
+            </a>
+            <a href="https://github.com/EgaPavanSaiVarshith/Vasavi-Bhavan" target="_blank" rel="noopener noreferrer"
+              class="btn-outline btn-sm">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: Varnika Ledger -->
+        <div class="project-card reveal glass-panel filter-item fullstack">
+          <div class="project-img-wrapper">
+            <div class="project-img-placeholder">
+              <i class="fas fa-file-invoice-dollar"></i>
+              <span>Varnika Ledger UI</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://varnikaledger.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/EgaPavanSaiVarshith/Varnika-Ledger" target="_blank" rel="noopener noreferrer"
+                class="overlay-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <span class="project-badge">Full Stack</span>
+            <h3 class="project-title">Varnika Ledger</h3>
+            <p class="project-desc">
+              A web-based ledger/finance management application that helps users track transactions, manage records, and
+              maintain financial data efficiently with strong typing.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag glass">TypeScript</span>
+              <span class="tech-tag glass">Next.js / React</span>
+              <span class="tech-tag glass">TailwindCSS</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://varnikaledger.vercel.app/" target="_blank" rel="noopener noreferrer"
+              class="btn-primary btn-sm">
+              <i class="fas fa-play"></i> Live Demo
+            </a>
+            <a href="https://github.com/EgaPavanSaiVarshith/Varnika-Ledger" target="_blank" rel="noopener noreferrer"
+              class="btn-outline btn-sm">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: Apex Planet Internship -->
+        <div class="project-card reveal glass-panel filter-item web">
+          <div class="project-img-wrapper">
+            <div class="project-img-placeholder">
+              <i class="fas fa-globe"></i>
+              <span>Apex Planet Tasks</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/EgaPavanSaiVarshith/Apex-Planet-Internship" target="_blank"
+                rel="noopener noreferrer" class="overlay-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <span class="project-badge">Internship</span>
+            <h3 class="project-title">Apex Planet Internship</h3>
+            <p class="project-desc">
+              A collection of web development tasks and real-world projects completed during the Apex Planet internship,
+              focusing on interactive UIs and solid frontend architecture.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag glass">JavaScript</span>
+              <span class="tech-tag glass">HTML</span>
+              <span class="tech-tag glass">CSS</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://github.com/EgaPavanSaiVarshith/Apex-Planet-Internship" target="_blank"
+              rel="noopener noreferrer" class="btn-outline btn-sm" style="width: 100%;">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="text-center reveal" style="margin-top:3rem;">
+        <a href="https://github.com/EgaPavanSaiVarshith" target="_blank" rel="noopener noreferrer"
+          class="btn-secondary">
+          <i class="fab fa-github"></i> See All Projects
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GITHUB STATS ===== -->
+  <section id="github-stats">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// github_integration.js</span>
+        <h2 class="section-title">GitHub <span class="gradient-text">Activity</span></h2>
+      </div>
+      <div class="github-grid">
+        <div class="github-stat-card glass-panel reveal">
+          <img
+            src="https://github-readme-stats.vercel.app/api?username=EgaPavanSaiVarshith&show_icons=true&theme=tokyonight&hide_border=true&bg_color=11111100"
+            alt="GitHub Stats" />
+        </div>
+        <div class="github-stat-card glass-panel reveal">
+          <img
+            src="https://github-readme-streak-stats.herokuapp.com/?user=EgaPavanSaiVarshith&theme=tokyonight&hide_border=true&background=11111100"
+            alt="GitHub Streak" />
+        </div>
+        <div class="github-stat-card glass-panel reveal">
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=EgaPavanSaiVarshith&layout=compact&theme=tokyonight&hide_border=true&bg_color=11111100"
+            alt="Top Languages" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// education.md</span>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal" id="edu-cs-degree">
+          <div class="timeline-dot neon-glow"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-card-header">
+              <div class="tl-icon glass"><i class="fas fa-graduation-cap"></i></div>
+              <div>
+                <span class="tl-tag current glass">Current</span>
+                <h3>Bachelor of Technology – Computer Science (AI & ML)</h3>
+              </div>
+            </div>
+            <p class="tl-institution">
+              <i class="fas fa-university"></i> Guru Nanak Institution (GNI), India
+            </p>
+            <p class="tl-period"><i class="fas fa-calendar-alt"></i> 2023 – 2027 (Expected)</p>
+            <p class="tl-desc">
+              Currently pursuing B.Tech in Computer Science with a specialization in Artificial Intelligence and Machine
+              Learning. Bridging the gap between intelligent systems and modern web architecture.
+            </p>
+            <div class="tl-skills">
+              <span class="tech-tag glass">AI & ML</span>
+              <span class="tech-tag glass">DSA</span>
+              <span class="tech-tag glass">Web Dev</span>
+              <span class="tech-tag glass">Cloud</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" id="edu-12th">
+          <div class="timeline-dot neon-glow"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-card-header">
+              <div class="tl-icon glass"><i class="fas fa-book-reader"></i></div>
+              <div>
+                <span class="tl-tag glass">Completed</span>
+                <h3>Higher Secondary Education (12th Grade)</h3>
+              </div>
+            </div>
+            <p class="tl-institution">
+              <i class="fas fa-university"></i> Resonance Junior College
+            </p>
+            <p class="tl-period"><i class="fas fa-calendar-alt"></i> April 2023 | Board of Intermediate Education</p>
+            <p class="tl-desc">
+              Percentage: <strong class="gradient-text">88.3%</strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" id="edu-10th">
+          <div class="timeline-dot neon-glow"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-card-header">
+              <div class="tl-icon glass"><i class="fas fa-school"></i></div>
+              <div>
+                <span class="tl-tag glass">Completed</span>
+                <h3>Secondary School Certificate (10th Grade)</h3>
+              </div>
+            </div>
+            <p class="tl-institution">
+              <i class="fas fa-university"></i> Resonance School
+            </p>
+            <p class="tl-period"><i class="fas fa-calendar-alt"></i> April 2021 | State Board</p>
+            <p class="tl-desc">
+              Percentage: <strong class="gradient-text">100%</strong>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// contact.js</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-desc">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's Work Together</h3>
+          <p>
+            I'm currently open to new opportunities – whether it's an internship, freelance project,
+            or a full-time role. Feel free to reach out!
+          </p>
+          <div class="contact-cards">
+            <a href="mailto:23831a6648@gniindia.org" class="contact-card glass-panel" id="contact-email">
+              <div class="contact-card-icon glass"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-card-label">Email</span>
+                <span class="contact-card-value">23831a6648@gniindia.org</span>
+              </div>
+            </a>
+            <a href="tel:+919059332805" class="contact-card glass-panel" id="contact-phone">
+              <div class="contact-card-icon glass"><i class="fas fa-phone"></i></div>
+              <div>
+                <span class="contact-card-label">Phone</span>
+                <span class="contact-card-value">+91 9059332805</span>
+              </div>
+            </a>
+            <a href="https://github.com/EgaPavanSaiVarshith" target="_blank" rel="noopener noreferrer"
+              class="contact-card glass-panel" id="contact-github">
+              <div class="contact-card-icon glass"><i class="fab fa-github"></i></div>
+              <div>
+                <span class="contact-card-label">GitHub</span>
+                <span class="contact-card-value">EgaPavanSaiVarshith</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/pavan-sai-varshith/" target="_blank" rel="noopener noreferrer"
+              class="contact-card glass-panel" id="contact-linkedin">
+              <div class="contact-card-icon glass"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <span class="contact-card-label">LinkedIn</span>
+                <span class="contact-card-value">Pavan Sai Varshith Ega</span>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/ega.pavansai/" target="_blank" rel="noopener noreferrer"
+              class="contact-card glass-panel" id="contact-instagram">
+              <div class="contact-card-icon glass"><i class="fab fa-instagram"></i></div>
+              <div>
+                <span class="contact-card-label">Instagram</span>
+                <span class="contact-card-value">ega.pavansai</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form id="contact-form" action="https://formsubmit.co/chintit401@gmail.com" method="POST" class="contact-form glass-panel" novalidate>
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" class="glass-input" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email-input">Your Email</label>
+              <input type="email" id="contact-email-input" class="glass-input" name="email"
+                placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" class="glass-input" name="subject" placeholder="Project Inquiry"
+                required />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" class="glass-input" name="message" rows="5"
+                placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" id="send-message-btn" style="width:100%; justify-content:center;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div id="form-feedback" class="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer" class="glass">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>PSV<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">
+        Designed &amp; Built with <span class="heart">♥</span> by
+        <strong>Pavan Sai Varshith Ega</strong> &copy; <span id="year"></span>
+      </p>
+      <div class="footer-social">
+        <a href="https://github.com/EgaPavanSaiVarshith" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+          class="glass"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/pavan-sai-varshith/" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn" class="glass"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/ega.pavansai/" target="_blank" rel="noopener noreferrer"
+          aria-label="Instagram" class="glass"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:23831a6648@gniindia.org" aria-label="Email" class="glass"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="back-to-top" aria-label="Back to top" class="glass"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
